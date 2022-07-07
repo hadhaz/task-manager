@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-const port = 3000
+const port = process.env.PORT
 
 const connectDB = require('./db/connect')
 const task = require('./routes/Task')
